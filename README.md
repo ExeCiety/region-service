@@ -3,7 +3,7 @@
 ## Description
 Region service for Paninti Microservice Test
 
-## Spesification
+## Specification
 1. Go Programming Language
 2. Beego Framework
 3. Postgresql Database
