@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: local-paninti-region-service-db
+    image: postgres:9.6.24-alpine
+    ports:
+      - "1405:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin1234!
+      - POSTGRES_DB=regions
+    networks:
+      - paninti_service_network
+
+networks:
+  paninti_service_network:
+    name: paninti_service_network
